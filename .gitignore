@@ -31,3 +31,6 @@ pnpm-debug.log*
 
 # Misc
 *.local
+
+# PDF files — assignment docs, no need to push
+*.pdf
