@@ -3,11 +3,13 @@ import './index.css';
 import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import DisbursementsPage from './pages/DisbursementsPage';
+import CustomerOnboarding from './pages/CustomerOnboarding';
 import { Bell, Search } from 'lucide-react';
 
 const PAGE_TITLES = {
   dashboard: 'Dashboard',
   disbursements: 'Disbursements',
+  onboarding: 'Customer Onboarding',
   customers: 'Customers',
   reports: 'Reports',
   documents: 'Documents',
@@ -34,6 +36,7 @@ function App() {
     switch (activePage) {
       case 'dashboard': return <Dashboard onNav={setActivePage} />;
       case 'disbursements': return <DisbursementsPage />;
+      case 'onboarding': return <CustomerOnboarding />;
       default: return <PlaceholderPage title={PAGE_TITLES[activePage] || activePage} />;
     }
   };

@@ -11,11 +11,13 @@ import {
   Bell,
   HelpCircle,
   LogOut,
+  UserPlus,
 } from 'lucide-react';
 
 const NAV_ITEMS = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { id: 'disbursements', label: 'Disbursements', icon: CreditCard, badge: '5' },
+  { id: 'onboarding',    label: 'Customer Onboarding', icon: UserPlus },
   { id: 'customers', label: 'Customers', icon: Users },
   { id: 'reports', label: 'Reports', icon: TrendingUp },
   { id: 'documents', label: 'Documents', icon: FileText },
